@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'pages/change_notifierr_provider.dart';
+import 'pages/simple_change_notifierr_provider.dart';
+import 'pages/simple_stream_builder/simple_stream_builder.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,8 +31,10 @@ class HomePage extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              _row(context, "Change nofifier",
+              _row(context, "Simple Change notifier provider",
                   ChangeNotifierrProvider()),
+              _row(context, "Simple Stream builder",
+                  SimpleStreamProvider()),
             ],
           ),
         ]));
